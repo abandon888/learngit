@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="top">
+        <span class="topbox">  
+            <img src="images\搜索.svg"style="height: 32px;float: left;margin-top:16px;margin-left:10px;margin-right:10px">
+            <input id="searchbox" type="text" placeholder="发现习惯"></span>
+        <button id="plus1"></button>
+    </div>
+    <div class="textbox">
+        <span class="texttop1">关注</span>
+        <span class="texttop2">最新</span>
+    </div>
+    <!-- 正文内容 -->
+    <div class="part">
+        <div class="box1">
+          <div><img src="images\headimage.jpg"style=" width: 120px;height: 120px;background-size: cover;border-radius: 50%;"></div>
+          <div class="post name">
+             <div class="post1">安佳</div>
+             <div class="post2">艺术学院</div>
+        </div>
+         <span class="post3">5分钟前</span>
+        </div>
+       <div class="box2">
+        校内有能做核酸的地方吗
+       </div>
+       <div class="box3">
+        <div class="tag"><img src="images\tag1.svg" style="height:48px;padding-top: 6px;"> 一句话日记</div>
+        <button id="like"></button>
+        <div class="like number"></div>
+        <div id="speak"></div>
+       </div>
+    </div>
+    <div class="part">
+        <div class="box1">
+          <div><img src="images\headimage.jpg"style=" width: 120px;height: 120px;background-size: cover;border-radius: 50%;"></div>
+          <div class="post name">
+             <div class="post1">李琦</div>
+             <div class="post2">软件学院</div>
+        </div>
+         <span class="post3">2小时前</span>
+        </div>
+       <div class="box2">
+        有没有不常用校园网的同学出租，速联系
+       </div>
+       <div class="box3">
+        <div class="tag"><img src="images\tag1.svg" style="height:48px;padding-top: 6px;"> 问题反馈</div>
+        <button id="like"></button>
+        <div class="like number"></div>
+        <div id="speak"></div>
+       </div>
+    </div>
+    <div class="nav">
+        <div class="navtag"><img src="images\时钟 实心.svg">今日</div>
+        <div class="navtag"><img src="images\消息1.svg">圈子</div>
+        <div class="navtag"><img src="images\应用.svg">生活</div>
+        <div class="navtag"><img src="images\地图2.svg">地图</div>
+        <div class="navtag"><img src="images\星球.svg">我的</div>
+    </div>
+    <div id="plus2">
+        <a onclick="pageScroll()"><img src="images\加号.svg"></a>
+    </div>
+    <script>
+        // 聚焦
+     let plus1 = document.getElementById('plus1')
+     let box = document.getElementById('searchbox')
+     plus1.onclick = function () {
+     box.focus()
+}
+ //点赞???为什么没有效果
+    let like = document.getElementById('like')
+     function color_change(){
+     like.style.background = 'url(images/点赞 (1).svg) no-repeat';
+ }
+     like.addEventListener("click", color_change)
+ //回到顶部
+     function pageScroll(){     
+      window.scrollBy(0,-100);     
+      scrolldelay = setTimeout('pageScroll()',100);        
+      var sTop=document.documentElement.scrollTop+document.body.scrollTop;    
+      if(sTop==0) clearTimeout(scrolldelay);}
+    </script>
+</body>
+</html>

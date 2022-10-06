@@ -1,0 +1,167 @@
+.top{
+    width: 50%;
+    height: 64px;
+    margin: 0 auto;
+  
+}
+#searchbox{
+   float: left;
+   background-color: #d8d5d5;
+   height: 32px;
+   width: auto;
+   font-size:32px;
+   border: 0;
+   margin:16px auto;
+   outline: none;
+}
+.topbox{
+    float: left;
+    width: 650px;
+    height: 64px;
+    background-color: #d8d5d5;
+    border-radius: 20px;
+
+}
+.topbox:focus{
+    border: solid black;
+}
+#plus1{
+    float: left;
+    border: none;
+    height: 64px;
+    width: 64px;
+    margin-left: 5px;
+    background-image: url(images/加号.svg);
+    /* 太奇怪了，用的复制相对路径，但是还需要手动把\改为/才能显示出图片？电脑问题？ */
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+}
+#plus1:focus{
+    border: solid black;
+}
+.textbox{
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    justify-content:space-around;
+    font-size: 32px;
+}
+.texttop2{
+    font-size: 32px;
+    border-bottom: solid 4px #1483ba;
+}
+.texttop1{
+    font-size: 32px;
+    color: rgb(184, 183, 183);
+}
+.part{
+    height: 400px;
+    width: 50%;
+    margin: 0 auto;
+    border-top: solid 2px #f6f0f0;
+    border-bottom: solid 2px #f6f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+}
+/* 姓名 */
+.post1{
+    font-size: 64px;
+    font-weight: 400;
+
+}
+/* 来自 */
+.post2{
+    font-size: 32px;
+    font-weight: 200;
+    font-style: italic;
+    color: #bebbbb;
+}
+/* 发帖人信息区 */
+.postname{
+    padding-left: 15px;
+    margin-left: 10px;
+}
+/* 首部大盒子 */
+.box1{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  
+}
+/* 时间 */
+.post3{
+    font-size: 32px;
+    font-style: italic;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+.post5{
+    font-size: 48px;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+}
+/* 主要内容区 */
+.box2{
+   
+    display: flex;
+    justify-content: space-around;
+    font-size: 32px;
+    margin-top: 48px;
+}
+/* 内容区底部 */
+.box3{
+    margin-top: 32px;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.tag{
+    background-color: #f4efef;
+    font-weight: 700;
+    border-radius: 20%;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+#like{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-image: url(images/点赞.svg);
+    margin-left: 300px;
+    background-color: white;
+}
+#speak{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-image: url(images/评论.svg);
+}
+.nav{
+    position: fixed;
+    margin-left: 360px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #f6f0f0;
+    width: 50%;
+    background-color: white;
+    
+}
+.navtag{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #bebbbb;
+}
+#plus2{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    margin-left: 1025px;
+    bottom: 100px;
+}
